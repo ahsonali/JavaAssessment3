@@ -13,8 +13,7 @@ public class ElementTest {
     @Before
     public void setUp() {
         element = new Element(
-                "Hydrogen",
-                "colorless gas",
+                "Hydrogen", "colorless gas",
                 1.008,
                 20.271,
                 "diatomic nonmetal",
@@ -39,12 +38,14 @@ public class ElementTest {
     }
 
     @Test
-    public void getName() {
+    public void getName()
+    {
         assertEquals("Hydrogen", element.getName());
     }
 
     @Test
-    public void getAppearance() {
+    public void getAppearance()
+    {
         assertEquals("colorless gas", element.getAppearance());
     }
 
