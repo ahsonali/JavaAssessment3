@@ -8,9 +8,14 @@ import java.util.HashMap;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
-public class ElementCollection {
+public class ElementCollection extends ArrayList<Element> {
 
-    private HashMap<String, Object> elements = new HashMap<>();
+    //private HashMap<String, Object> elements = new HashMap<>();
+
+    ElementCollection ()
+    {
+        super();
+    }
 
     public Element findByAtomicNumber(int atomic_number) throws ParseException
     {
